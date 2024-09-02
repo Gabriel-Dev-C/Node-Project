@@ -1,4 +1,8 @@
 "use strict";
+
+// PARA EXECUTAR O ARQUIVO: 
+// PRIMEIRO: npx tsc
+// SEGUNDO: node dist/index.js
 const number = 18;
 if (number >= 20) {
     console.log('Number are greater than 18');
