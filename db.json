@@ -1,0 +1,40 @@
+{
+  "Clientes": [
+    {
+      "id": 1,
+      "nome": "Juan",
+      "sobrenome": "Martins",
+      "email": "juan.martins@gmail.com"
+    },
+    {
+      "id": 2,
+      "nome": "Gabriel",
+      "sobrenome": "Chabaribery",
+      "email": "gabriel.chabaribery@gmail.com"
+    },
+    {
+      "id": 3,
+      "nome": "João",
+      "sobrenome": "Magno",
+      "email": "joao.magno@gmail.com"
+    },
+    {
+      "id": 4,
+      "nome": "Leonardo",
+      "sobrenome": "Campeonato",
+      "email": "leo.campeonato@gmail.com"
+    },
+    {
+      "id": 5,
+      "nome": "Isa",
+      "sobrenome": "Pucnela",
+      "email": "isa.puc@gmail.com"
+    },
+    {
+      "id": 5,
+      "nome": "Isa",
+      "sobrenome": "Pucneli",
+      "email": "isa.pucc@gmail.com"
+    }
+  ]
+}
