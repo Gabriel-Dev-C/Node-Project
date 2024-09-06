@@ -11,3 +11,27 @@ if (number >= 20) {
 }
 
 console.log('Hello World', number);
+
+let salario : number = 9000
+let imposto : number
+
+if (salario >= 1904){
+    imposto = 0.0  
+}
+else if (salario >= 2826){
+    imposto = (salario - 1904) * 0.075
+}
+else if (salario >= 3751){
+    imposto = (salario - 2826) * 0.15 + (2826 - 1904) * 0.075
+}
+else if (salario >= 3751){
+    imposto = (salario - 2826) * 0.15 + (2826 - 1904) * 0.075
+}
+else if (salario >= 4664){
+    imposto = (salario - 3751) * 0.225 + (3751 - 2826) * 0.15 + (2826 - 1903) * 0.075
+}
+else {
+imposto = (salario - 4664.68) * 0.275 + (4664.68 - 3751.05) * 0.225 + (3751.05 - 2826.65) * 0.15 + (2826.65 - 1903.98) * 0.075
+}
+
+console.log(imposto)
