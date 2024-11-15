@@ -10,7 +10,7 @@ if (number >= 20) {
     console.log('Number are less than 18');
 }
 
-console.log('Hello World', number);
+console.log('\nHello World', number);
 
 let salario : number = 4500
 let imposto : number
@@ -34,7 +34,7 @@ else {
 imposto = (salario - 4664.68) * 0.275 + (4664.68 - 3751.05) * 0.225 + (3751.05 - 2826.65) * 0.15 + (2826.65 - 1903.98) * 0.075
 }
 
-console.log(imposto)
+console.log("\n",imposto)
 
 let pessoa : Object = {'nome': 'Lucas', 'idade': 18, 'ativo': true, 'salario': 1000.00};
 
@@ -43,8 +43,16 @@ let idade : number = 18;
 let ativo : boolean = true;
 let valor : number = 1000.00;
 
+console.log('\n');
 console.log(pessoa);
 console.log(nome);
 console.log(idade);
 console.log(ativo);
 console.log(valor);
+
+console.log('\n');
+let nome2 : string = 'Lucas';
+let idade2 = 18;
+
+console.log("\nNome 2: ",nome2);
+console.log("Idade 2: ",idade2);
