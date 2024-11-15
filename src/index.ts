@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 // PARA EXECUTAR O ARQUIVO: 
 // PRIMEIRO: npx tsc
 // SEGUNDO: node dist/index.js
@@ -35,3 +36,31 @@ imposto = (salario - 4664.68) * 0.275 + (4664.68 - 3751.05) * 0.225 + (3751.05 -
 }
 
 console.log(imposto)
+=======
+// PARA EXECUTAR O ARQUIVO: 
+// PRIMEIRO: npx tsc
+// SEGUNDO: node dist/index.js
+
+const number : number = 18;
+
+if (number >= 20) {
+    console.log('Number are greater than 18');
+} else {
+    console.log('Number are less than 18');
+}
+
+console.log('Hello World', number);
+
+let pessoa : Object = {'nome': 'Lucas', 'idade': 18, 'ativo': true, 'salario': 1000.00};
+
+let nome : string = 'João';
+let idade : number = 18;
+let ativo : boolean = true;
+let salario : number = 1000.00;
+
+console.log(pessoa);
+console.log(nome);
+console.log(idade);
+console.log(ativo);
+console.log(salario);
+>>>>>>> Stashed changes
