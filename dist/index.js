@@ -2,6 +2,7 @@
 // PARA EXECUTAR O ARQUIVO: 
 // PRIMEIRO: npx tsc
 // SEGUNDO: node dist/index.js
+Object.defineProperty(exports, "__esModule", { value: true });
 const number = 18;
 if (number >= 20) {
     console.log('Number are greater than 18');
@@ -73,4 +74,18 @@ function convertToFahreinheit(celsius) {
     return fahreinheit;
 }
 console.log(convertToFahreinheit(30));
+console.log('\n');
+function movimentar(move) {
+    console.log(`Movendo ${move.qtdPassos} passos para ${move.direcao}`);
+}
+movimentar({ direcao: 'cima', qtdPassos: 10 });
+const aluno_1 = require("./models/aluno");
+var pedrinho = new aluno_1.Aluno("pedrinho", 18);
+pedrinho.detalhar();
+pedrinho.andar("cima");
+pedrinho.chorar(51);
+var mariazinha = new aluno_1.Aluno("mariazinha", 30);
+mariazinha.andar("direita");
+mariazinha.chorar(10);
+mariazinha.detalhar();
 //# sourceMappingURL=index.js.map

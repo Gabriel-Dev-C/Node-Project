@@ -91,3 +91,30 @@ function convertToFahreinheit(celsius: number) : number {
 }
 
 console.log(convertToFahreinheit(30));
+
+console.log('\n');
+
+type direction = 'cima' | 'baixo' | 'esquerda' | 'direita';
+type movimento = {
+    direcao: direction;
+    qtdPassos: number;
+}
+
+function movimentar(move: movimento) {
+    console.log(`Movendo ${move.qtdPassos} passos para ${move.direcao}`);
+}
+
+movimentar({direcao: 'cima', qtdPassos: 10});
+console.log('\n');
+
+import {Aluno} from "./models/aluno"
+
+var pedrinho = new Aluno("pedrinho", 18);
+pedrinho.detalhar();
+pedrinho.andar("cima");
+pedrinho.chorar(51);
+
+var mariazinha = new Aluno("mariazinha", 30);
+mariazinha.andar("direita");
+mariazinha.chorar(10);
+mariazinha.detalhar();
