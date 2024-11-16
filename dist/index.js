@@ -50,11 +50,27 @@ console.log("Idade 2: ", idade2);
 function CriarMsg(nome) {
     return 'Olá, ' + nome;
 }
+console.log(CriarMsg('Lucas'));
 function showName() {
+    // Get the input element by ID
     const nameInput = document.getElementById('name');
-    const spanName = document.getElementById('spanName');
-    if (nameInput && spanName) {
-        spanName.innerText = "Olá, " + nameInput.value + "!";
+    // Check if the input element exists
+    if (nameInput) {
+        // Get the value of the input element
+        const nameValue = nameInput.value;
+        // Use the value in a variable
+        const message = `Olá, ${nameValue}!`;
+        // Display the message in the span element
+        const spanName = document.getElementById('spanName');
+        if (spanName) {
+            spanName.innerText = message;
+        }
     }
 }
+console.log('\n');
+function convertToFahreinheit(celsius) {
+    let fahreinheit = (celsius * 9 / 5) + 32;
+    return fahreinheit;
+}
+console.log(convertToFahreinheit(30));
 //# sourceMappingURL=index.js.map

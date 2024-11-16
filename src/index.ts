@@ -61,6 +61,8 @@ function CriarMsg(nome : string): string {
     return 'Olá, ' + nome;
 }
 
+console.log(CriarMsg('Lucas'));
+
 function showName() {
      // Get the input element by ID
      const nameInput = document.getElementById('name') as HTMLInputElement;
@@ -80,3 +82,12 @@ function showName() {
          }
      }
 }
+
+console.log('\n');
+
+function convertToFahreinheit(celsius: number) : number {
+    let fahreinheit = (celsius * 9/5) + 32;
+    return fahreinheit;
+}
+
+console.log(convertToFahreinheit(30));
