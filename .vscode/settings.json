@@ -1,5 +1,6 @@
 {
     "code-runner.executorMap": {
         "typescript": "cls && npx sucrase-node",    
-    }
+    },
+    "liveServer.settings.port": 5501
 }

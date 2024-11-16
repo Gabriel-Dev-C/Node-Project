@@ -56,3 +56,16 @@ let idade2 = 18;
 
 console.log("\nNome 2: ",nome2);
 console.log("Idade 2: ",idade2);
+
+function CriarMsg(nome : string): string {
+    return 'Olá, ' + nome;
+}
+
+function showName() {
+    const nameInput = document.getElementById('name') as HTMLInputElement;
+    const spanName = document.getElementById('spanName');
+
+    if (nameInput && spanName) {
+        spanName.innerText = "Olá, " + nameInput.value + "!";
+    }
+}
