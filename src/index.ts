@@ -62,10 +62,21 @@ function CriarMsg(nome : string): string {
 }
 
 function showName() {
-    const nameInput = document.getElementById('name') as HTMLInputElement;
-    const spanName = document.getElementById('spanName');
+     // Get the input element by ID
+     const nameInput = document.getElementById('name') as HTMLInputElement;
 
-    if (nameInput && spanName) {
-        spanName.innerText = "Olá, " + nameInput.value + "!";
-    }
+     // Check if the input element exists
+     if (nameInput) {
+         // Get the value of the input element
+         const nameValue = nameInput.value;
+ 
+         // Use the value in a variable
+         const message = `Olá, ${nameValue}!`;
+ 
+         // Display the message in the span element
+         const spanName = document.getElementById('spanName');
+         if (spanName) {
+             spanName.innerText = message;
+         }
+     }
 }
