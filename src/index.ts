@@ -118,3 +118,25 @@ var mariazinha = new Aluno("mariazinha", 30);
 mariazinha.andar("direita");
 mariazinha.chorar(10);
 mariazinha.detalhar();
+
+console.log('\n');
+
+import {Personagem} from "./models/personagem"
+
+var personagem1 = new Personagem({
+    nome: "Hazord",
+    classe: "mago",
+    vida: 100,
+    ataque: 50,
+    defesa: 30,
+    movimento: {
+        direcao: 'cima',
+        qtdPassos: 10,
+        movimentacao: 'andar'
+    }
+});
+
+personagem1.detalhar();
+personagem1.movimentar();
+personagem1.atacar();
+personagem1.defender();

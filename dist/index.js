@@ -79,6 +79,7 @@ function movimentar(move) {
     console.log(`Movendo ${move.qtdPassos} passos para ${move.direcao}`);
 }
 movimentar({ direcao: 'cima', qtdPassos: 10 });
+console.log('\n');
 const aluno_1 = require("./models/aluno");
 var pedrinho = new aluno_1.Aluno("pedrinho", 18);
 pedrinho.detalhar();
@@ -88,4 +89,22 @@ var mariazinha = new aluno_1.Aluno("mariazinha", 30);
 mariazinha.andar("direita");
 mariazinha.chorar(10);
 mariazinha.detalhar();
+console.log('\n');
+const personagem_1 = require("./models/personagem");
+var personagem1 = new personagem_1.Personagem({
+    nome: "Hazord",
+    classe: "mago",
+    vida: 100,
+    ataque: 50,
+    defesa: 30,
+    movimento: {
+        direcao: 'cima',
+        qtdPassos: 10,
+        movimentacao: 'andar'
+    }
+});
+personagem1.detalhar();
+personagem1.movimentar();
+personagem1.atacar();
+personagem1.defender();
 //# sourceMappingURL=index.js.map
