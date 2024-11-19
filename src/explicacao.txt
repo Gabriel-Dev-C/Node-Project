@@ -20,3 +20,18 @@
  * documentation comments to provide detailed information about its purpose,
  * usage, and implementation details.
  */
+
+ SOBRE O CONVERSOR.TS:
+ A linha 1 do código define uma função chamada converterPrecoParaReais que converte um preço em dólares para reais, 
+ aplicando uma taxa de câmbio, IOF (Imposto sobre Operações Financeiras) e um lucro. A função aceita quatro parâmetros:
+
+precoEmDolar (number): O preço do produto em dólares.
+taxaDeCambio (number): A taxa de câmbio para converter dólares em reais.
+iof (number, opcional, valor padrão 6.38): A taxa do IOF aplicada à conversão.
+lucro (number, opcional, valor padrão 45): A porcentagem de lucro aplicada ao preço final.
+A função retorna um objeto com quatro propriedades:
+
+precoEmReais: O preço convertido para reais.
+valorComIOF: O valor do IOF aplicado.
+precoComIOF: O preço em reais incluindo o IOF.
+precoVenda: O preço final de venda com o lucro aplicado.
