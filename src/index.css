@@ -1,6 +1,21 @@
 /*
 COMENTÁRIOS EM CSS
+
+CASCADE: É a ordem de prioridade que o CSS segue para aplicar as regras de estilo. (De cima para baixo)
+    - Inline: É a regra de estilo que é aplicada diretamente no elemento HTML.
+    - ID: É a regra de estilo que é aplicada diretamente no ID do elemento HTML.
+    - Class: É a regra de estilo que é aplicada diretamente na classe do elemento HTML.
+    - Tag: É a regra de estilo que é aplicada diretamente na tag do elemento HTML.
+
+ESPECIFICIDADE: É a ordem de prioridade que o CSS segue para aplicar as regras de estilo. (Mais específico para menos específico)
+    - !important: É a regra de estilo que é aplicada diretamente no elemento HTML.
+    - Inline: É a regra de estilo que é aplicada diretamente no elemento HTML.
+    - ID: É a regra de estilo que é aplicada diretamente no ID do elemento HTML.
+    - Class: É a regra de estilo que é aplicada diretamente na classe do elemento HTML.
+    - Tag: É a regra de estilo que é aplicada diretamente na tag do elemento HTML. 
 */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 * {
     margin: 0;
@@ -8,16 +23,19 @@ COMENTÁRIOS EM CSS
 }
 body {
     font-family: Arial, sans-serif;
-    background-color: rgb(0,0,0);
+    background-image: url('./images/background-node.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 .container {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 100vh;
 }
 .form {
-    background-color: rgba(255,255,255,0.8);
+    background-color: #a1a6aa;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -27,6 +45,7 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 30vh;
+    height: 300px;
 }
 #submit-btn {
     border-radius: 5px;
@@ -44,4 +63,17 @@ body {
     padding: 5px;
     border-radius: 5px;
     border: 1px solid #ccc;
+}
+
+#title {
+    font-family: 'Montserrat';
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#spanName {
+    font-family: 'Open Sans';
+    font-size: 1.2em;
+    margin-top: 10px;
 }
