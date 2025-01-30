@@ -13,6 +13,19 @@ ESPECIFICIDADE: É a ordem de prioridade que o CSS segue para aplicar as regras 
     - ID: É a regra de estilo que é aplicada diretamente no ID do elemento HTML.
     - Class: É a regra de estilo que é aplicada diretamente na classe do elemento HTML.
     - Tag: É a regra de estilo que é aplicada diretamente na tag do elemento HTML. 
+
+TAGS INLINE NÃO É POSSÍVEL APLICAR LARGURA E ALTURA, POIS ELAS NÃO SÃO ELEMENTOS BLOCO.
+NÃO RECOMENDADO UTILIZAR PADDING E MARGIN EM ELEMENTOS INLINE.
+    - PADDING E MARGIN SÃO PROPRIEDADES QUE NÃO SÃO APLICADAS EM ELEMENTOS INLINE, POIS ELES NÃO SÃO ELEMENTOS BLOCO.
+
+PARA EVITAR QUE UM BLOCO ULTRAPASSE O TAMANHO LIMITE DO BLOCO PAI, PODEMOS UTILIZAR A PROPRIEDADE BOX-SIZING: BORDER-BOX;
+    - A PROPRIEDADE BOX-SIZING: BORDER-BOX; FAZ COM QUE O TAMANHO DO BLOCO SEJA CALCULADO CONSIDERANDO O TAMANHO DO BLOCO E A MARGEM.
+
+E NÃO É RECOMENDADO UTILIZAR ALTURA PARA BLOCOS, APENAS LARGURA.
+
+PODEMOS ALINHAR BLOCOS CONTENDO UMA WIDTH DE 50% COM MARGIN: AUTO;
+QUANDO O FUNDO DE UM BLOCO SE ENCONTRA COM O TOPO DE OUTRO, TEREMOS UM EFEITO QUE SE CHAMA COLLAPSING MARGIN. (MARGEM COLAPSADA)
+    - PARA RESOLVER O COLLAPSING MARGIN, PODEMOS UTILIZAR A PROPRIEDADE PADDING OU BORDER.
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
@@ -45,7 +58,6 @@ body {
     border: 1px solid #ccc;
     border-radius: 5px;
     width: 30vh;
-    height: 300px;
 }
 #submit-btn {
     border-radius: 5px;
