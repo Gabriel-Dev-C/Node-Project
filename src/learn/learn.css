@@ -1,4 +1,19 @@
+/* QUANDO A FLEXBOX ESTÁ CONFIGURADA COMO ROW, O MAIN AXIS QUE É DEFINIDO PELO JUSTIFY CONTENT, IRA MOVER HORIZONTALMENTE, */
+/* QUANDO A FLEXBOX ESTÁ CONFIGURADA COMO COLUMN, O MAIN AXIS QUE É DEFINIDO PELO JUSTIFY CONTENT, IRA MOVER VERTICALMENTE. */
+/* E O CROSS AXIS QUE É DEFINIDO PELO ALIGN ITEMS, IRA MOVER VERTICALMENTE. */
+
 .container {
+    height: 50vh;
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
+    /* justify-content: flex-start;
+    align-items: center;
+    gap: 30px; */
+}
+
+.item {
+    flex-basis: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
