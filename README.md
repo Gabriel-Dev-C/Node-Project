@@ -6,7 +6,7 @@ O foco do projeto é desenvolver um design responsivo utilizando SASS para todos
 
 
 <p align="center">
-<img src="src/images/readme-capa.png" alt="Protótipo do projeto.">
+<img src="src/images/readme-update.png" alt="Protótipo do projeto.">
 </p>
 
 ## Meta
