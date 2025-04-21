@@ -41,6 +41,13 @@ USAR O CÓDIGO EMBED DIRETAMENTE NO HEAD DO HTML SERÁ PROCESSADO MAIS RÁPIDO P
     width: 100%;
 }
 
+@mixin text-field {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -92,10 +99,19 @@ body {
     animation: ease-in-out 0.3s;
 }
 #name {
-    margin-bottom: 10px;
-    padding: 5px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    @include text-field;
+}
+
+#email {
+    @include text-field;
+}
+
+#password {
+    @include text-field;
+}
+
+#confirm-password {
+    @include text-field;
 }
 
 #title {
