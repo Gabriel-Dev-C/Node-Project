@@ -70,3 +70,26 @@ function showName() {
         }, 2000);
     }
 }
+
+const form = document.getElementById('form');
+
+form.addEventListener('submit', async event => {
+    event.preventDefault(); // Prevent the default form submission behavior
+
+    // console.log(this); // 'this' refers to the form element when function(event) is used
+
+    console.log(form);
+
+    const formData = new FormData(form); // Create a FormData object from the form
+
+    formData.delete('confirm-password'); // Remove the 'confirm-password' field
+
+    const data = await fetch('')
+
+    // Itera sobre os dados do formulário e exibe no console
+    for (const [key, value] of formData.entries()) {
+        console.log(`${key}: ${value}`);
+    }
+});
+
+console.log(form);
