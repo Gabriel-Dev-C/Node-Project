@@ -67,7 +67,7 @@ function showName() {
         // Wait for 2 seconds, then redirect to another page
         setTimeout(() => {
             window.location.href = "./learn/learn.html"; // Replace with the actual path to your HTML file
-        }, 2000);
+        }, 2500);
     }
 }
 
