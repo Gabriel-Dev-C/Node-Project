@@ -66,6 +66,38 @@ body {
     align-items: center;
     height: 100vh;
 }
+.main-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0; /* Move para o topo da página */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta para o centro exato */
+    margin-bottom: auto; /* Remove qualquer margem inferior */
+    padding: 20px;
+    margin-top: 0;
+    width: 100%; /* Opcional: ajusta a largura */
+    background-color: #757575;
+}
+.header-container {
+    margin-top: 10px;
+}
+.navbar ul{
+    display: flex;
+    list-style-type: none;
+    margin-top: 30px;
+}
+.navbar li a {
+    margin: 0 20px; /* Espaçamento entre os itens do menu */
+    text-decoration: none;
+    color: aliceblue;
+    font-size: large;
+}
+.navbar li a:hover {
+    color: #000;
+    text-decoration: underline;
+}
 .form {
     position: absolute; /* Posiciona a form em relação ao contêiner */
     top: 50%; /* Centraliza verticalmente */
