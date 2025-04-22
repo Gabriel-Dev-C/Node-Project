@@ -71,6 +71,8 @@ function showName() {
     }
 }
 
+// PARA EU CONSEGUIR CRIAR UM SERVIDOR EMBUTIDO PHP, PRECISEI ADICIONAR MANUALMENTE O PATH  "set PATH=%PATH%;C:\xampp\php" NO TERMINAL CMD, E APÓS ISSO CRIEI O SERVIDOR LOCAL COM O COMANDO "php -S localhost:8000" NA PASTA DO PROJETO, E DEPOIS DISSO EU CONSEGUI ACESSAR O ARQUIVO HTML NO NAVEGADOR.
+
 const form = document.getElementById('form');
 
 form.addEventListener('submit', async event => {
@@ -84,12 +86,19 @@ form.addEventListener('submit', async event => {
 
     formData.delete('confirm-password'); // Remove the 'confirm-password' field
 
-    const data = await fetch('')
+    const data = await fetch('http://localhost:8000/index.php', {
+        method: 'POST',
+        mode: 'cors',
+        body: formData
+    })
+    
+    const response = await data.json(); // Parse the JSON response
+    console.log(response); // Log the response to the console
 
     // Itera sobre os dados do formulário e exibe no console
-    for (const [key, value] of formData.entries()) {
-        console.log(`${key}: ${value}`);
-    }
+    // for (const [key, value] of formData.entries()) {
+    //  console.log(`${key}: ${value}`);
+    // }
 });
 
 console.log(form);
