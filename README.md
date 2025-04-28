@@ -2,7 +2,7 @@
 
 > Página web desenvolvida para estudos e compreensão de tecnologias utilizadas no mercado.
 
-O foco do projeto é desenvolver um design responsivo utilizando SASS para todos os dispositivos terem a oportunidade de acessar a página combinado com o HTML semântico, e desenvolver um sistema eficiente de cadastro utilizando NODE juntamente com TYPESCRIPT.
+O foco do projeto é desenvolver um design responsivo utilizando SASS para todos os dispositivos terem a oportunidade de acessar a página combinado com o HTML semântico, e desenvolver um sistema eficiente de cadastro utilizando NODE juntamente com TYPESCRIPT. Além disso foi desenvolvivo um servidor embutido localmente em PHP para receber as informações digitadas no forms, e através de FormData, é enviadas as informações armazenadas em um arquivo JSON.
 
 
 <p align="center">
